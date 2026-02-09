@@ -1,0 +1,39 @@
+.container {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.container h2 {
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container .label {
+    font-size: 16px;
+    line-height: 1.5;
+    color: blue;
+}
+
+.container form .interests-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.container form .btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container form .btn-container .register-btn {
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}

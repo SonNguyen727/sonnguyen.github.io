@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>REGISTRATION</h2>
+        <hr>
+        
+        <form name="regForm">
+            <table>
+                <tr>
+                    <td class="label">Username:</td>
+                    <td><input type="text" name="user"></td>
+                </tr>
+                <tr>
+                    <td class="label">Password:</td>
+                    <td><input type="password" name="pass"></td>
+                </tr>
+                <tr>
+                    <td class="label">Re-type Password:</td>
+                    <td><input type="password" name="repass"></td>
+                </tr>
+            </table>
+            
+            <hr>
+            
+            <table>
+                <tr>
+                    <td class="label">Birthday:</td>
+                    <td>
+                        <select name="month">
+                            <option>[select one]</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select> , 
+                        <input type="text" class="short-input"> , 
+                        <input type="text" class="short-input"> 
+                        <span style="color: #666; font-size: 13px;">(Month Day, Year)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Images:</td>
+                    <td><input type="file" name="img"></td>
+                </tr>
+            </table>
+            
+            <hr>
+            
+            <table>
+                <tr>
+                    <td class="label">First Name:</td>
+                    <td>
+                        <input type="text" class="name-input"> 
+                        <span style="margin-left: 20px; color: blue">Last Name:</span>
+                        <input type="text" class="name-input">
+                    </td>
+                </tr>
+            </table>
+            
+            <hr>
+            
+            <p style="color: blue;">Interests (optional):</p>
+            <div class="interests-grid" style="color: blue;">
+                <div class="interest-item"><input type="checkbox"> Entertainment</div>
+                <div class="interest-item"><input type="checkbox"> Business</div>
+                <div class="interest-item"><input type="checkbox"> Home & Family</div>
+                <div class="interest-item"><input type="checkbox"> Computers & Technology</div>
+                <div class="interest-item"><input type="checkbox"> Health</div>
+                <div class="interest-item"><input type="checkbox"> Personal Finance</div>
+                <div class="interest-item"><input type="checkbox"> Music</div>
+                <div class="interest-item"><input type="checkbox"> Small Business</div>
+            </div>
+            
+            <hr>
+            
+            <div class="btn-container">
+                <button type="button" class="register-btn" onclick="handleRegister()">REGISTER</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
